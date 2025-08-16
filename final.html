@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final - OQJF</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container py-5 text-center">
+    
+    <section id="final" class="card shadow-lg p-4 rounded-4 bg-white bg-opacity-75">
+      <h4 class="mb-3 fw-bold">Assista essa mensagem final:</h4>
+      <div class="ratio ratio-16x9 mb-4">
+        <iframe src="https://www.youtube.com/embed/cVt28_wQhw4?si=GvjeXeLyalSFFUyt" 
+                title="Mensagem Final" allowfullscreen></iframe>
+      </div>
+      <p class="mb-4 fs-5">
+        Independente das escolhas que você fez durante a missão, lembre-se:  
+        <strong>Jesus já fez tudo para ser o sacrifício perfeito para a redenção e o perdão dos nossos pecados.</strong>  
+        Ele nos chama a nos assemelhar a Cristo e a viver diariamente perguntando:  
+        <strong>"O que Jesus faria?"</strong>
+      </p>
+      <p class="mb-4 fs-5">
+        Faça uma oração sincera no Altar. Se você ainda não tem feito <strong>OQJF</strong>, comece hoje.  
+        E se já tem procurado fazer o seu melhor, continue firme na fé e no Altar com <strong>Deus</strong>.
+      </p>
+      <button class="btn btn-lg btn-primary px-4 shadow" onclick="missionComplete()">Missão Cumprida!</button>
+    </section>
+
+    <section id="done" class="mt-5 d-none card shadow-lg p-4 rounded-4 bg-white bg-opacity-75">
+      <dotlottie-wc src="https://lottie.host/4babbf2d-a73b-4e25-a496-f555dfb61a35/h4bRZ0l0d6.lottie" style="width: 300px;height: 150px" speed="1" autoplay loop></dotlottie-wc>
+      <h3 class="mt-3 fw-bold">Parabéns! Missão cumprida! 🙌</h3>
+      <p class="fs-5">Agora é você e <strong>Deus</strong> no Altar. 💖</p>
+    </section>
+  </div>
+
+  <script>
+    function missionComplete() {
+      document.getElementById('final').classList.add('d-none');
+      document.getElementById('done').classList.remove('d-none');
+    }
+  </script>
+
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</body>
+</html>
